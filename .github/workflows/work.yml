@@ -5,5 +5,5 @@ jobs:
     container: node:16
     steps:
       - run: echo "Hello world"
-      - run: npm ci
+      - run: npm install
       - run: npm test
