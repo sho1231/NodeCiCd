@@ -13,7 +13,7 @@ describe('CRUD',() => {
         await request(app).post("/get").send({
             name:"Shourja2",
             age:33
-        }).expect(201);
+        }).expect(200);
     })
     afterAll(async()=>{
         await mongo.close();
