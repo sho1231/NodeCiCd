@@ -14,7 +14,7 @@ describe('CRUD',() => {
         await request(app).post("/get").send({
             name:"Shourja1",
             age:31
-        }).expect(200);
+        }).expect(201);
     })
     afterAll(async()=>{
         await mongo.users.deleteMany();
