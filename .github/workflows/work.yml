@@ -4,5 +4,5 @@ jobs:
     runs-on: windows-latest
     steps:
       - run: echo "Hello world"
-      - run: npm install
+      - run: npm ci
       - run: npm test
