@@ -11,6 +11,7 @@ const mongo={
             console.log("URL:",process.env.MONGO_URL);
             await this.client.connect();
             this.db=this.client.db(process.env.DB_NAME);
+            console.log(process.env.DB_NAME);
             this.users=await this.db.collection("users");
             console.log("Mongo connection established successfully");
         }

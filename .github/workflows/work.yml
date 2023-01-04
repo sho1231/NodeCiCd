@@ -1,4 +1,4 @@
-on: [push]
+on: [push,pull]
 jobs:
   testworkflow:
     runs-on: windows-latest
