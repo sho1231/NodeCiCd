@@ -1,0 +1,8 @@
+on: [push]
+jobs:
+  testworkflow:
+    runs-on: windows-latest
+    steps:
+      - run: echo "Hello world"
+      - run: npm install
+      - run: npm test
