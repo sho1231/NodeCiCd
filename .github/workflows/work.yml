@@ -2,10 +2,8 @@ on: [push]
 jobs:
   testworkflow:
     runs-on: windows-latest
+    container: node:16
     steps:
       - run: echo "Hello world"
-      - uses: actions/setup-node@v3
-        with: 
-            node-version: 16
       - run: npm ci
       - run: npm test
