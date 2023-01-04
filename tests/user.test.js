@@ -11,8 +11,11 @@ describe('CRUD',() => {
     })
     test('Post req test', async () => {
         await request(app).post("/get").send({
-            name:"Shourja1",
-            age:23
+            name:"Shourja2",
+            age:33
         }).expect(201);
+    })
+    afterAll(async()=>{
+        await mongo.close();
     })
 })
